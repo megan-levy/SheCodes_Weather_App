@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="body">
+      <h1 id="locale">
+        Cincinnati
+      </h1>
+      <h2 id="date">
+        date
+      </h2>
+      <h3 id="currentTemp">
+        60° F
+      </h3>
+      <div id="highLow">
+        <p>48°/<strong>27°</strong> F</p>
+      </div>
+      <p class="sunrise">
+        Sunrise <strong>6:59AM</strong>/ Sunset <strong>6:36PM</strong>
+      </p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-2" id = "day1">
+            <strong> Friday </strong> <br />
+            45°/<strong>27°</strong> <br />
+            🌧️
+          </div>
+          <div class="col-2" id = "day2">
+            <strong> Saturday </strong><br />
+            60°/<strong>47°</strong> <br />
+            ☁️
+          </div>
+          <div class="col-2" id = "day3">
+            <strong> Sunday </strong><br />
+            55°/<strong>35°</strong> <br />
+            ☁️
+          </div>
+          <div class="col-2" id = "day4">
+            <strong> Monday </strong><br />
+            64°/<strong>57°</strong> <br />
+            ⛅
+          </div>
+          <div class="col-2" id = "day5">
+            <strong> Tuesday </strong><br />
+            60°/<strong>49°</strong> <br />
+            ☀️
+          </div>
+        </div>
+      </div>
+      <form id="searchEngine">
+        <div class="Change_Area" id="searchCity" class="col-2">
+          <input
+            type="text"
+            id="test"
+            placeholder="Change Location"
+            autofocus="on"
+          />
+          <button type="submit" id="searching">Search</button>
+          <div id="location" class="form-text">
+            <strong>Enter a city to see a new location</strong>
+          </div>
+        </div>
+      </form>
+      <a href="https://github.com/megan-levy/Levy_Weather_App">Open with GitHub</a>
+    </div>
+
+    <p class="footer">
+      Coded by Megan Levy
+    </p>
+  </body>
+  <script src="index.js"></script>
+</html>
